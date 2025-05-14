@@ -1,0 +1,897 @@
+{
+  "classes": {
+    "material": {
+      "description": "chemical or material"
+    },
+    "property": {
+      "description": "property of a chemical or material"
+    },
+    "application": {
+      "description": "application or use of a chemical or material"
+    },
+    "synthesis_method": {
+      "description": "the synthesis method used to create a chemical or material"
+    },
+    "characterization_method": {
+      "description": "the characterization method used to characterize a chemical or material"
+    },
+    "descriptor": {
+      "description": "a descriptor of a chemical or material"
+    },
+    "symmetry_phase": {
+      "description": "the symmetry or phase label of a chemical or material"
+    }
+  },
+  "relations": {
+    "application.characterization_method": {
+      "description": "characterization method of this application",
+      "domain": "application",
+      "range": "characterization_method",
+      "reverse": "characterization_method.application",
+      "reverse_description": "application associated with this characterization method"
+    },
+    "descriptor.synthesis_method": {
+      "description": "synthesis method for this descriptor",
+      "domain": "descriptor",
+      "range": "synthesis_method",
+      "reverse": "synthesis_method.descriptor",
+      "reverse_description": "descriptor of this synthesis method"
+    },
+    "symmetry_phase.characterization_method": {
+      "description": "characterization method of this symmetry or phase label",
+      "domain": "symmetry_phase",
+      "range": "characterization_method",
+      "reverse": "characterization_method.symmetry_phase",
+      "reverse_description": "symmetry or phase label of this characterization method"
+    },
+    "symmetry_phase.descriptor": {
+      "description": "descriptor of this symmetry or phase label",
+      "domain": "symmetry_phase",
+      "range": "descriptor",
+      "reverse": "descriptor.symmetry_phase",
+      "reverse_description": "symmetry phase or label of this descriptor"
+    },
+    "material.material": {
+      "description": "material associated to this material",
+      "domain": "material",
+      "range": "material",
+      "reverse": "material.material",
+      "reverse_description": "material associated to this material"
+    },
+    "material.synthesis_method": {
+      "description": "synthesis method for this material",
+      "domain": "material",
+      "range": "synthesis_method",
+      "reverse": "synthesis_method.material",
+      "reverse_description": "material with this synthesis method"
+    },
+    "application.application": {
+      "description": "application associated to this application",
+      "domain": "application",
+      "range": "application",
+      "reverse": "application.application",
+      "reverse_description": "application associated to this application"
+    },
+    "synthesis_method.synthesis_method": {
+      "description": "synthesis method associated to this synthesis method",
+      "domain": "synthesis_method",
+      "range": "synthesis_method",
+      "reverse": "synthesis_method.synthesis_method",
+      "reverse_description": "synthesis method associated to this synthesis method"
+    },
+    "characterization_method.symmetry_phase": {
+      "description": "symmetry or phase label of this characterization method",
+      "domain": "characterization_method",
+      "range": "symmetry_phase",
+      "reverse": "symmetry_phase.characterization_method",
+      "reverse_description": "characterization method of this symmetry or phase label"
+    },
+    "characterization_method.descriptor": {
+      "description": "descriptor of this characterization method",
+      "domain": "characterization_method",
+      "range": "descriptor",
+      "reverse": "descriptor.characterization_method",
+      "reverse_description": "characterization method of this descriptor"
+    },
+    "characterization_method.material": {
+      "description": "material with this characterization method",
+      "domain": "characterization_method",
+      "range": "material",
+      "reverse": "material.characterization_method",
+      "reverse_description": "characterization method of this material"
+    },
+    "property.synthesis_method": {
+      "description": "synthesis method for this property",
+      "domain": "property",
+      "range": "synthesis_method",
+      "reverse": "synthesis_method.property",
+      "reverse_description": "property of this synthesis method"
+    },
+    "symmetry_phase.material": {
+      "description": "material with this symmetry phase or label",
+      "domain": "symmetry_phase",
+      "range": "material",
+      "reverse": "material.symmetry_phase",
+      "reverse_description": "symmetry phase or label of this material"
+    },
+    "descriptor.material": {
+      "description": "material with this descriptor",
+      "domain": "descriptor",
+      "range": "material",
+      "reverse": "material.descriptor",
+      "reverse_description": "descriptor of this material"
+    },
+    "material.symmetry_phase": {
+      "description": "symmetry phase or label of this material",
+      "domain": "material",
+      "range": "symmetry_phase",
+      "reverse": "symmetry_phase.material",
+      "reverse_description": "material with this symmetry phase or label"
+    },
+    "property.material": {
+      "description": "material with this property",
+      "domain": "property",
+      "range": "material",
+      "reverse": "material.property",
+      "reverse_description": "property of this material"
+    },
+    "descriptor.symmetry_phase": {
+      "description": "symmetry phase or label of this descriptor",
+      "domain": "descriptor",
+      "range": "symmetry_phase",
+      "reverse": "symmetry_phase.descriptor",
+      "reverse_description": "descriptor of this symmetry or phase label"
+    },
+    "symmetry_phase.synthesis_method": {
+      "description": "synthesis method for this symmetry phase or label",
+      "domain": "symmetry_phase",
+      "range": "synthesis_method",
+      "reverse": "synthesis_method.symmetry_phase",
+      "reverse_description": "symmetry phase or label associated with this synthesis method"
+    },
+    "characterization_method.application": {
+      "description": "application associated with this characterization method",
+      "domain": "characterization_method",
+      "range": "application",
+      "reverse": "application.characterization_method",
+      "reverse_description": "characterization method of this application"
+    },
+    "characterization_method.property": {
+      "description": "property with this characterization method",
+      "domain": "characterization_method",
+      "range": "property",
+      "reverse": "property.characterization_method",
+      "reverse_description": "characterization method of this property"
+    },
+    "material.descriptor": {
+      "description": "descriptor of this material",
+      "domain": "material",
+      "range": "descriptor",
+      "reverse": "descriptor.material",
+      "reverse_description": "material with this descriptor"
+    },
+    "descriptor.characterization_method": {
+      "description": "characterization method of this descriptor",
+      "domain": "descriptor",
+      "range": "characterization_method",
+      "reverse": "characterization_method.descriptor",
+      "reverse_description": "descriptor of this characterization method"
+    },
+    "application.property": {
+      "description": "property associated with this application",
+      "domain": "application",
+      "range": "property",
+      "reverse": "property.application",
+      "reverse_description": "application associated with this property"
+    },
+    "synthesis_method.material": {
+      "description": "material with this synthesis method",
+      "domain": "synthesis_method",
+      "range": "material",
+      "reverse": "material.synthesis_method",
+      "reverse_description": "synthesis method for this material"
+    },
+    "material.property": {
+      "description": "property of this material",
+      "domain": "material",
+      "range": "property",
+      "reverse": "property.material",
+      "reverse_description": "material with this property"
+    },
+    "synthesis_method.application": {
+      "description": "application associated with this synthesis method",
+      "domain": "synthesis_method",
+      "range": "application",
+      "reverse": "application.synthesis_method",
+      "reverse_description": "synthesis method associated with this application"
+    },
+    "synthesis_method.characterization_method": {
+      "description": "characterization method of this synthesis method",
+      "domain": "synthesis_method",
+      "range": "characterization_method",
+      "reverse": "characterization_method.synthesis_method",
+      "reverse_description": "synthesis associated with this characterization method"
+    },
+    "application.symmetry_phase": {
+      "description": "symmetry phase or label associated with this application",
+      "domain": "application",
+      "range": "symmetry_phase",
+      "reverse": "symmetry_phase.application",
+      "reverse_description": "application associated with this symmetry phase or label"
+    },
+    "property.application": {
+      "description": "application associated with this property",
+      "domain": "property",
+      "range": "application",
+      "reverse": "application.property",
+      "reverse_description": "property associated with this application"
+    },
+    "symmetry_phase.symmetry_phase": {
+      "description": "symmetry phase or label associated with this symmetry phase or label",
+      "domain": "symmetry_phase",
+      "range": "symmetry_phase",
+      "reverse": "symmetry_phase.symmetry_phase",
+      "reverse_description": "symmetry phase or label associated with this symmetry phase or label"
+    },
+    "synthesis_method.symmetry_phase": {
+      "description": "symmetry phase or label associated with this synthesis method",
+      "domain": "synthesis_method",
+      "range": "symmetry_phase",
+      "reverse": "symmetry_phase.synthesis_method",
+      "reverse_description": "synthesis method for this symmetry phase or label"
+    },
+    "characterization_method.synthesis_method": {
+      "description": "synthesis associated with this characterization method",
+      "domain": "characterization_method",
+      "range": "synthesis_method",
+      "reverse": "synthesis_method.characterization_method",
+      "reverse_description": "characterization method of this synthesis method"
+    },
+    "material.characterization_method": {
+      "description": "characterization method of this material",
+      "domain": "material",
+      "range": "characterization_method",
+      "reverse": "characterization_method.material",
+      "reverse_description": "material with this characterization method"
+    },
+    "symmetry_phase.property": {
+      "description": "property of this symmetry phase or label",
+      "domain": "symmetry_phase",
+      "range": "property",
+      "reverse": "property.symmetry_phase",
+      "reverse_description": "symmetry phase or label of this property"
+    },
+    "property.symmetry_phase": {
+      "description": "symmetry phase or label of this property",
+      "domain": "property",
+      "range": "symmetry_phase",
+      "reverse": "symmetry_phase.property",
+      "reverse_description": "property of this symmetry phase or label"
+    },
+    "descriptor.application": {
+      "description": "application associated with this descriptor",
+      "domain": "descriptor",
+      "range": "application",
+      "reverse": "application.descriptor",
+      "reverse_description": "descriptor associated with this application"
+    },
+    "application.synthesis_method": {
+      "description": "synthesis method associated with this application",
+      "domain": "application",
+      "range": "synthesis_method",
+      "reverse": "synthesis_method.application",
+      "reverse_description": "application associated with this synthesis method"
+    },
+    "property.property": {
+      "description": "property associated with this property",
+      "domain": "property",
+      "range": "property",
+      "reverse": "property.property",
+      "reverse_description": "property associated with this property"
+    },
+    "descriptor.property": {
+      "description": "property of this descriptor",
+      "domain": "descriptor",
+      "range": "property",
+      "reverse": "property.descriptor",
+      "reverse_description": "descriptor of this property"
+    },
+    "descriptor.descriptor": {
+      "description": "descriptor associated with this descriptor",
+      "domain": "descriptor",
+      "range": "descriptor",
+      "reverse": "descriptor.descriptor",
+      "reverse_description": "descriptor associated with this descriptor"
+    },
+    "property.descriptor": {
+      "description": "descriptor of this property",
+      "domain": "property",
+      "range": "descriptor",
+      "reverse": "descriptor.property",
+      "reverse_description": "property of this descriptor"
+    },
+    "symmetry_phase.application": {
+      "description": "application associated with this symmetry phase or label",
+      "domain": "symmetry_phase",
+      "range": "application",
+      "reverse": "application.symmetry_phase",
+      "reverse_description": "symmetry phase or label associated with this application"
+    },
+    "application.descriptor": {
+      "description": "descriptor associated with this application",
+      "domain": "application",
+      "range": "descriptor",
+      "reverse": "descriptor.application",
+      "reverse_description": "application associated with this descriptor"
+    },
+    "property.characterization_method": {
+      "description": "characterization method of this property",
+      "domain": "property",
+      "range": "characterization_method",
+      "reverse": "characterization_method.property",
+      "reverse_description": "property with this characterization method"
+    },
+    "characterization_method.characterization_method": {
+      "description": "characterization method associated with this characterization method",
+      "domain": "characterization_method",
+      "range": "characterization_method",
+      "reverse": "characterization_method.characterization_method",
+      "reverse_description": "characterization method associated with this characterization method"
+    },
+    "application.material": {
+      "description": "material used for this application",
+      "domain": "application",
+      "range": "material",
+      "reverse": "material.application",
+      "reverse_description": "application of this material"
+    },
+    "material.application": {
+      "description": "application of this material",
+      "domain": "material",
+      "range": "application",
+      "reverse": "application.material",
+      "reverse_description": "material used for this application"
+    },
+    "synthesis_method.descriptor": {
+      "description": "descriptor of this synthesis method",
+      "domain": "synthesis_method",
+      "range": "descriptor",
+      "reverse": "descriptor.synthesis_method",
+      "reverse_description": "synthesis method for this descriptor"
+    },
+    "synthesis_method.property": {
+      "description": "property of this synthesis method",
+      "domain": "synthesis_method",
+      "range": "property",
+      "reverse": "property.synthesis_method",
+      "reverse_description": "synthesis method for this property"
+    }
+  },
+  "inverse_relations": {},
+  "entities": [
+    {
+        "qid": "m.2296",
+        "label": "bars"
+    },
+    {
+        "qid": "m.41683",
+        "label": "ccs"
+    },
+    {
+        "qid": "m.7934",
+        "label": "ablation"
+    },
+    {
+        "qid": "m.38675",
+        "label": "disk shaped"
+    },
+    {
+        "qid": "m.67161",
+        "label": "laurentide"
+    },
+    {
+        "qid": "m.39544",
+        "label": "c2/m"
+    },
+    {
+        "qid": "m.5251",
+        "label": "dealuminated"
+    },
+    {
+        "qid": "m.3395",
+        "label": "triglycerides"
+    },
+    {
+        "qid": "m.44879",
+        "label": "lake sediment"
+    },
+    {
+        "qid": "m.29695",
+        "label": "tonalitic"
+    },
+    {
+        "qid": "m.25790",
+        "label": "allylboration"
+    },
+    {
+        "qid": "m.9463",
+        "label": "single sheets"
+    },
+    {
+        "qid": "m.45973",
+        "label": "stem"
+    },
+    {
+        "qid": "m.53892",
+        "label": "contact surface"
+    },
+    {
+        "qid": "m.9515",
+        "label": "square grid"
+    },
+    {
+        "qid": "m.50747",
+        "label": "chromatographic separation"
+    },
+    {
+        "qid": "m.14515",
+        "label": "potentiodynamic curve"
+    },
+    {
+        "qid": "m.10054",
+        "label": "stem haadf"
+    },
+    {
+        "qid": "m.29805",
+        "label": "anaerobic treatment"
+    },
+    {
+        "qid": "m.12320",
+        "label": "nad"
+    },
+    {
+        "qid": "m.399",
+        "label": "kcn"
+    },
+    {
+        "qid": "m.60571",
+        "label": "\u03b2-ni(oh)2"
+    },
+    {
+        "qid": "m.35585",
+        "label": "fire"
+    },
+    {
+        "qid": "m.66108",
+        "label": "h2o2 treatment"
+    },
+    {
+        "qid": "m.23597",
+        "label": "alloy composites"
+    },
+    {
+        "qid": "m.24253",
+        "label": "hall-petch relationship"
+    },
+    {
+        "qid": "m.42096",
+        "label": "mineral carbonation"
+    },
+    {
+        "qid": "m.21881",
+        "label": "drilling"
+    },
+    {
+        "qid": "m.14597",
+        "label": "rta"
+    },
+    {
+        "qid": "m.19042",
+        "label": "naphtha"
+    },
+    {
+        "qid": "m.46771",
+        "label": "continuous flow reactor"
+    },
+    {
+        "qid": "m.14345",
+        "label": "pr"
+    },
+    {
+        "qid": "m.13496",
+        "label": "grating structure"
+    },
+    {
+        "qid": "m.31100",
+        "label": "mossy"
+    },
+    {
+        "qid": "m.16140",
+        "label": "arc"
+    },
+    {
+        "qid": "m.67511",
+        "label": "hydrogen bond lifetime"
+    },
+    {
+        "qid": "m.45378",
+        "label": "oxidation reaction"
+    },
+    {
+        "qid": "m.8364",
+        "label": "coverslip"
+    },
+    {
+        "qid": "m.570",
+        "label": "(nh4)2mos4"
+    },
+    {
+        "qid": "m.18877",
+        "label": "acicular"
+    },
+    {
+        "qid": "m.28691",
+        "label": "dansyl"
+    },
+    {
+        "qid": "m.45238",
+        "label": "nanopipettes"
+    },
+    {
+        "qid": "m.3641",
+        "label": "n2o"
+    },
+    {
+        "qid": "m.38665",
+        "label": "diamagnetism"
+    },
+    {
+        "qid": "m.6085",
+        "label": "melanoma"
+    },
+    {
+        "qid": "m.53852",
+        "label": "wenzel model"
+    },
+    {
+        "qid": "m.46605",
+        "label": "magnetism"
+    },
+    {
+        "qid": "m.36943",
+        "label": "leucocratic"
+    },
+    {
+        "qid": "m.28661",
+        "label": "chiral selectors"
+    },
+    {
+        "qid": "m.49443",
+        "label": "photocytotoxicity"
+    },
+    {
+        "qid": "m.65988",
+        "label": "h-passivated"
+    },
+    {
+        "qid": "m.40446",
+        "label": "co yield"
+    },
+    {
+        "qid": "m.55913",
+        "label": "cycle voltammograms"
+    },
+    {
+        "qid": "m.23736",
+        "label": "brucite"
+    },
+    {
+        "qid": "m.27797",
+        "label": "t2"
+    },
+    {
+        "qid": "m.23002",
+        "label": "natural aging"
+    },
+    {
+        "qid": "m.1854",
+        "label": "orthorhombic"
+    },
+    {
+        "qid": "m.26511",
+        "label": "charpy impact test"
+    },
+    {
+        "qid": "m.23078",
+        "label": "\u03b7"
+    },
+    {
+        "qid": "m.44351",
+        "label": "electrochemical impedance analysis"
+    },
+    {
+        "qid": "m.755",
+        "label": "metals"
+    },
+    {
+        "qid": "m.22570",
+        "label": "pcbs"
+    },
+    {
+        "qid": "m.14238",
+        "label": "optical energy gap"
+    },
+    {
+        "qid": "m.22961",
+        "label": "df tem"
+    },
+    {
+        "qid": "m.8657",
+        "label": "free energy diagram"
+    },
+    {
+        "qid": "m.14727",
+        "label": "sem surface"
+    },
+    {
+        "qid": "m.4439",
+        "label": "sandwich"
+    },
+    {
+        "qid": "m.8810",
+        "label": "interphase"
+    },
+    {
+        "qid": "m.24247",
+        "label": "hp"
+    },
+    {
+        "qid": "m.9453",
+        "label": "sige"
+    },
+    {
+        "qid": "m.11041",
+        "label": "sulfur cathode"
+    },
+    {
+        "qid": "m.7978",
+        "label": "25mpa"
+    },
+    {
+        "qid": "m.10694",
+        "label": "immunoassays"
+    },
+    {
+        "qid": "m.11714",
+        "label": "basalts"
+    },
+    {
+        "qid": "m.3425",
+        "label": "unit cell parameter"
+    },
+    {
+        "qid": "m.39892",
+        "label": "cdi"
+    },
+    {
+        "qid": "m.45591",
+        "label": "pore walls"
+    },
+    {
+        "qid": "m.15236",
+        "label": "uf"
+    },
+    {
+        "qid": "m.13441",
+        "label": "gd-oes"
+    },
+    {
+        "qid": "m.29936",
+        "label": "anatomy"
+    },
+    {
+        "qid": "m.20173",
+        "label": "impregnated"
+    },
+    {
+        "qid": "m.24488",
+        "label": "melting behavior"
+    },
+    {
+        "qid": "m.49359",
+        "label": "myogenic"
+    },
+    {
+        "qid": "m.29080",
+        "label": "anaerobically digested"
+    },
+    {
+        "qid": "m.1818",
+        "label": "100"
+    },
+    {
+        "qid": "m.63038",
+        "label": "optical"
+    },
+    {
+        "qid": "m.53094",
+        "label": "l2"
+    },
+    {
+        "qid": "m.9489",
+        "label": "solvothermal synthesis"
+    },
+    {
+        "qid": "m.10842",
+        "label": "nanofibrous"
+    },
+    {
+        "qid": "m.28466",
+        "label": "irmpd"
+    },
+    {
+        "qid": "m.1569",
+        "label": "polyethylene"
+    },
+    {
+        "qid": "m.17065",
+        "label": "back reflectors"
+    },
+    {
+        "qid": "m.62864",
+        "label": "hot casting"
+    },
+    {
+        "qid": "m.34703",
+        "label": "brownmillerite"
+    },
+    {
+        "qid": "m.26173",
+        "label": "nonylphenol"
+    },
+    {
+        "qid": "m.40044",
+        "label": "two fluid model"
+    },
+    {
+        "qid": "m.15967",
+        "label": "advanced oxidation process"
+    },
+    {
+        "qid": "m.30458",
+        "label": "monocrystal"
+    },
+    {
+        "qid": "m.48740",
+        "label": "dc"
+    },
+    {
+        "qid": "m.16479",
+        "label": "kinase activity"
+    },
+    {
+        "qid": "m.38242",
+        "label": "light source"
+    },
+    {
+        "qid": "m.19461",
+        "label": "isothermal heating"
+    },
+    {
+        "qid": "m.49999",
+        "label": "solid state route"
+    },
+    {
+        "qid": "m.22687",
+        "label": "rhombic dodecahedron"
+    },
+    {
+        "qid": "m.12824",
+        "label": "circuit diagram"
+    },
+    {
+        "qid": "m.26523",
+        "label": "chip"
+    },
+    {
+        "qid": "m.5028",
+        "label": "chalcogen"
+    },
+    {
+        "qid": "m.27500",
+        "label": "potentiodynamic"
+    },
+    {
+        "qid": "m.5360",
+        "label": "dose response curve"
+    },
+    {
+        "qid": "m.4318",
+        "label": "nfs"
+    },
+    {
+        "qid": "m.9691",
+        "label": "ultra-thin film"
+    },
+    {
+        "qid": "m.34378",
+        "label": "bjh desorption pore size distribution"
+    },
+    {
+        "qid": "m.16566",
+        "label": "pump"
+    },
+    {
+        "qid": "m.20753",
+        "label": "zirconium oxide"
+    },
+    {
+        "qid": "m.24814",
+        "label": "sem image"
+    },
+    {
+        "qid": "m.4344",
+        "label": "optoelectronics"
+    },
+    {
+        "qid": "m.49329",
+        "label": "mesenchymal stem"
+    },
+    {
+        "qid": "m.20095",
+        "label": "h2 generation"
+    },
+    {
+        "qid": "m.12912",
+        "label": "cover glass"
+    },
+    {
+        "qid": "m.32202",
+        "label": "supersonic expansion"
+    },
+    {
+        "qid": "m.4418",
+        "label": "reflection spectra"
+    },
+    {
+        "qid": "m.19861",
+        "label": "catalytic process"
+    },
+    {
+        "qid": "m.8201",
+        "label": "bone"
+    },
+    {
+        "qid": "m.4714",
+        "label": "ageing"
+    },
+    {
+        "qid": "m.24103",
+        "label": "fast cooling"
+    },
+    {
+        "qid": "m.48442",
+        "label": "r-3m"
+    },
+    {
+        "qid": "m.10377",
+        "label": "aerospace"
+    },
+    {
+        "qid": "m.58883",
+        "label": "upconversion fluorescence"
+    },
+    {
+        "qid": "m.23627",
+        "label": "aluminum oxide (al2o3)"
+    },
+    {
+        "qid": "m.74717",
+        "label": "ovarian carcinoma"
+    },
+    {
+        "qid": "m.75004",
+        "label": "oyster"
+    }
+]
+}

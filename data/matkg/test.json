@@ -1,0 +1,933 @@
+[
+    {
+        "kb": "matkg",
+        "idx": 0,
+        "question": "which materials have been synthesized using ccs and can be described as bars?",
+        "entities": [
+            "m.2296",
+            "m.41683"
+        ],
+        "query": "(AND material (AND (JOIN material.descriptor m.2296) (JOIN (R synthesis_method.material) m.41683)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 1,
+        "question": "what is the symmetry phase of materials that are synthesized with ablation?",
+        "entities": [
+            "m.7934"
+        ],
+        "query": "(AND symmetry_phase (JOIN symmetry_phase.material (JOIN (R synthesis_method.material) m.7934)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 2,
+        "question": "which materials have application that have descriptor disk shaped?",
+        "entities": [
+            "m.38675"
+        ],
+        "query": "(AND material (JOIN (R application.material) (JOIN application.descriptor m.38675)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 3,
+        "question": "what are the applications of properties associated with laurentide?",
+        "entities": [
+            "m.67161"
+        ],
+        "query": "(AND application (JOIN (R property.application) (JOIN property.material m.67161)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 4,
+        "question": "what are the synthesis methods of symmetry_phases that are associated with symmetry phase c2/m?",
+        "entities": [
+            "m.39544"
+        ],
+        "query": "(AND synthesis_method (JOIN (R symmetry_phase.synthesis_method) (JOIN symmetry_phase.symmetry_phase m.39544)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 5,
+        "question": "what are the symmetry phases of synthesis methods that are associated with synthesis method dealuminated?",
+        "entities": [
+            "m.5251"
+        ],
+        "query": "(AND symmetry_phase (JOIN (R synthesis_method.symmetry_phase) (JOIN synthesis_method.synthesis_method m.5251)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 6,
+        "question": "what are the descriptors that are associated with triglycerides and the descriptor lake sediment?",
+        "entities": [
+            "m.3395",
+            "m.44879"
+        ],
+        "query": "(AND descriptor (AND (JOIN descriptor.material m.3395) (JOIN (R descriptor.descriptor) m.44879)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 7,
+        "question": "which applications have synthesis method that have symmetry phase tonalitic?",
+        "entities": [
+            "m.29695"
+        ],
+        "query": "(AND application (JOIN application.synthesis_method (JOIN synthesis_method.symmetry_phase m.29695)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 8,
+        "question": "what are the properties of materials that are synthesized by allylboration?",
+        "entities": [
+            "m.25790"
+        ],
+        "query": "(AND property (JOIN property.material (JOIN (R synthesis_method.material) m.25790)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 9,
+        "question": "how many characterization methods have descriptors single sheets and stem?",
+        "entities": [
+            "m.9463",
+            "m.45973"
+        ],
+        "query": "(COUNT (AND characterization_method (AND (JOIN (R descriptor.characterization_method) m.9463) (JOIN characterization_method.descriptor m.45973))))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 10,
+        "question": "what are the descriptors for application contact surface and descriptors that are associated with descriptor square grid?",
+        "entities": [
+            "m.53892",
+            "m.9515"
+        ],
+        "query": "(AND descriptor (AND (JOIN (R application.descriptor) m.53892) (JOIN descriptor.descriptor m.9515)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 11,
+        "question": "what are the materials associated with materials that have application of chromatographic separation?",
+        "entities": [
+            "m.50747"
+        ],
+        "query": "(AND material (JOIN material.material (JOIN material.application m.50747)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 12,
+        "question": "which synthesis method have descriptors that have synthesis method that have characterization method potentiodynamic curve?",
+        "entities": [
+            "m.14515"
+        ],
+        "query": "(AND synthesis_method (JOIN synthesis_method.descriptor (JOIN descriptor.synthesis_method (JOIN (R characterization_method.synthesis_method) m.14515))))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 13,
+        "question": "which synthesis methods have characterization method stem haadf and have the propoerty to which anaerobic treatment can be applied?",
+        "entities": [
+            "m.10054",
+            "m.29805"
+        ],
+        "query": "(AND synthesis_method (AND (JOIN (R characterization_method.synthesis_method) m.10054) (JOIN synthesis_method.property (JOIN (R application.property) m.29805))))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 14,
+        "question": "which synthesis methods have descriptors that are associated with nad?",
+        "entities": [
+            "m.12320"
+        ],
+        "query": "(AND synthesis_method (JOIN synthesis_method.descriptor (JOIN descriptor.material m.12320)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 15,
+        "question": "which applications uses kcn and have the symmetry phase \u03b2-ni(oh)2?",
+        "entities": [
+            "m.399",
+            "m.60571"
+        ],
+        "query": "(AND application (AND (JOIN (R material.application) m.399) (JOIN (R symmetry_phase.application) m.60571)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 16,
+        "question": "what are the properties with descriptors that have application of fire?",
+        "entities": [
+            "m.35585"
+        ],
+        "query": "(AND property (JOIN (R descriptor.property) (JOIN (R application.descriptor) m.35585)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 17,
+        "question": "how many materials are associated with materials that have synthesis method of h2o2 treatment?",
+        "entities": [
+            "m.66108"
+        ],
+        "query": "(COUNT (AND material (JOIN (R material.material) (JOIN material.synthesis_method m.66108))))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 18,
+        "question": "how many materials have descriptor alloy composites and have characterization method of hall-petch relationship?",
+        "entities": [
+            "m.23597",
+            "m.24253"
+        ],
+        "query": "(COUNT (AND material (AND (JOIN (R descriptor.material) m.23597) (JOIN material.characterization_method m.24253))))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 19,
+        "question": "how many synthesis methods are there for materials that can be applied for mineral carbonation?",
+        "entities": [
+            "m.42096"
+        ],
+        "query": "(COUNT (AND synthesis_method (JOIN (R material.synthesis_method) (JOIN material.application m.42096))))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 20,
+        "question": "what are the characterization methods of applications that have the synthesis method of drilling?",
+        "entities": [
+            "m.21881"
+        ],
+        "query": "(AND characterization_method (JOIN (R application.characterization_method) (JOIN (R synthesis_method.application) m.21881)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 21,
+        "question": "how many materials have synthesis method rta and are associated with material naphtha?",
+        "entities": [
+            "m.14597",
+            "m.19042"
+        ],
+        "query": "(COUNT (AND material (AND (JOIN (R synthesis_method.material) m.14597) (JOIN (R material.material) m.19042))))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 22,
+        "question": "how many descriptors have synthesis method continuous flow reactor?",
+        "entities": [
+            "m.46771"
+        ],
+        "query": "(COUNT (AND descriptor (JOIN (R synthesis_method.descriptor) m.46771)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 23,
+        "question": "which synthesis methods have properties that are associated with the property pr?",
+        "entities": [
+            "m.14345"
+        ],
+        "query": "(AND synthesis_method (JOIN synthesis_method.property (JOIN property.property m.14345)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 24,
+        "question": "what materials have descriptors that are associated with the descriptor grating structure?",
+        "entities": [
+            "m.13496"
+        ],
+        "query": "(AND material (JOIN material.descriptor (JOIN (R descriptor.descriptor) m.13496)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 25,
+        "question": "what are the characterization methods with descriptor that are associated with descriptor mossy?",
+        "entities": [
+            "m.31100"
+        ],
+        "query": "(AND characterization_method (JOIN characterization_method.descriptor (JOIN descriptor.descriptor m.31100)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 26,
+        "question": "what are the properties associated with property that symmetry phase arc?",
+        "entities": [
+            "m.16140"
+        ],
+        "query": "(AND property (JOIN (R property.property) (JOIN (R symmetry_phase.property) m.16140)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 27,
+        "question": "what are the properties associated with materials that have the property hydrogen bond lifetime?",
+        "entities": [
+            "m.67511"
+        ],
+        "query": "(AND property (JOIN property.material (JOIN material.property m.67511)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 28,
+        "question": "how many applications have synthesis method that are associated with synthesis method oxidation reaction?",
+        "entities": [
+            "m.45378"
+        ],
+        "query": "(COUNT (AND application (JOIN (R synthesis_method.application) (JOIN (R synthesis_method.synthesis_method) m.45378))))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 29,
+        "question": "what are the characterization methods of materials that have descriptors coverslip?",
+        "entities": [
+            "m.8364"
+        ],
+        "query": "(AND characterization_method (JOIN characterization_method.material (JOIN material.descriptor m.8364)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 30,
+        "question": "how many descriptors of characterization method that are associated with material (nh4)2mos4?",
+        "entities": [
+            "m.570"
+        ],
+        "query": "(COUNT (AND descriptor (JOIN descriptor.characterization_method (JOIN (R material.characterization_method) m.570))))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 31,
+        "question": "what are characterization methods of properties that have descriptor acicular?",
+        "entities": [
+            "m.18877"
+        ],
+        "query": "(AND characterization_method (JOIN (R property.characterization_method) (JOIN (R descriptor.property) m.18877)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 32,
+        "question": "how many applications are associated with characterization method that are associated with material dansyl?",
+        "entities": [
+            "m.28691"
+        ],
+        "query": "(COUNT (AND application (JOIN (R characterization_method.application) (JOIN (R material.characterization_method) m.28691))))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 33,
+        "question": "how many symmetry phases have descriptors that are associated with descriptor nanopipettes?",
+        "entities": [
+            "m.45238"
+        ],
+        "query": "(COUNT (AND symmetry_phase (JOIN symmetry_phase.descriptor (JOIN (R descriptor.descriptor) m.45238))))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 34,
+        "question": "what are the other characterization methods associated with the synthesis method of the characterization method of n2o",
+        "entities": [
+            "m.3641"
+        ],
+        "query": "(AND characterization_method (JOIN characterization_method.synthesis_method (JOIN synthesis_method.characterization_method (JOIN (R material.characterization_method) m.3641))))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 35,
+        "question": "all the properties that are associated with the application of the properties associated with diamagnetism",
+        "entities": [
+            "m.38665"
+        ],
+        "query": "(AND property (AND (JOIN (R application.property) application) (JOIN property.property m.38665)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 36,
+        "question": "give the name of the descriptor that is a descriptor for both melanoma and wenzel model",
+        "entities": [
+            "m.6085",
+            "m.53852"
+        ],
+        "query": "(AND descriptor (AND (JOIN (R symmetry_phase.descriptor) m.6085) (JOIN (R characterization_method.descriptor) m.53852)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 37,
+        "question": "what are all the properties associated with the applications that are associated with magnetism",
+        "entities": [
+            "m.46605"
+        ],
+        "query": "(AND property (JOIN (R application.property) (JOIN application.application m.46605)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 38,
+        "question": "which synthesis method have property that have symmetry phase associated with symmetry phase leucocratic?",
+        "entities": [
+            "m.36943"
+        ],
+        "query": "(AND synthesis_method (JOIN synthesis_method.property (JOIN (R symmetry_phase.property) (JOIN (R symmetry_phase.symmetry_phase) m.36943))))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 39,
+        "question": "what properties have a symmtery phase and can be applied for chiral selectors?",
+        "entities": [
+            "m.28661"
+        ],
+        "query": "(AND property (AND (JOIN (R symmetry_phase.property) symmetry_phase) (JOIN property.application m.28661)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 40,
+        "question": "which applications are associated with applications that have the associated property of photocytotoxicity?",
+        "entities": [
+            "m.49443"
+        ],
+        "query": "(AND application (JOIN application.application (JOIN (R property.application) m.49443)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 41,
+        "question": "what is the application of the descriptor for the synthesis method h-passivated",
+        "entities": [
+            "m.65988"
+        ],
+        "query": "(AND application (JOIN application.descriptor (JOIN descriptor.synthesis_method m.65988)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 42,
+        "question": "what are the descriptors of applications that have the property of co yeild?",
+        "entities": [
+            "m.40446"
+        ],
+        "query": "(AND descriptor (JOIN descriptor.application (JOIN application.property m.40446)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 43,
+        "question": "which materials have the characterization method associated with cycle voltammograms",
+        "entities": [
+            "m.55913"
+        ],
+        "query": "(AND material (JOIN (R characterization_method.material) (JOIN characterization_method.characterization_method m.55913)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 44,
+        "question": "what are the characterization methods that have symmetry phase of brucite and t2?",
+        "entities": [
+            "m.23736",
+            "m.27797"
+        ],
+        "query": "(AND characterization_method (AND (JOIN (R symmetry_phase.characterization_method) m.23736) (JOIN characterization_method.symmetry_phase m.27797)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 45,
+        "question": "what are the characterization methods that are associated with the synthesis method natural aging and symmetry phase orthorhombic and associated with characterization_method charpy impact test?",
+        "entities": [
+            "m.23002",
+            "m.1854",
+            "m.26511"
+        ],
+        "query": "(AND characterization_method (AND (JOIN characterization_method.synthesis_method m.23002) (AND (JOIN characterization_method.symmetry_phase m.1854) (JOIN characterization_method.characterization_method m.26511))))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 46,
+        "question": "what is the common property between the symmetry phase \u03b7 and characterization_method electrochemical impedance analysis",
+        "entities": [
+            "m.23078",
+            "m.44351"
+        ],
+        "query": "(AND property (AND (JOIN property.symmetry_phase m.23078) (JOIN (R characterization_method.property) m.44351)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 47,
+        "question": "name the characterization method associated with the synthesis method that has metals as one of its properties",
+        "entities": [
+            "m.755"
+        ],
+        "query": "(AND characterization_method (JOIN characterization_method.synthesis_method (JOIN (R property.synthesis_method) m.755)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 48,
+        "question": "pcbs and optical energy gap have which characterization method in common?",
+        "entities": [
+            "m.22570",
+            "m.14238"
+        ],
+        "query": "(AND characterization_method (AND (JOIN (R material.characterization_method) m.22570) (JOIN (R property.characterization_method) m.14238)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 49,
+        "question": "what are all the property of the material with characterization method dftem",
+        "entities": [
+            "m.22961"
+        ],
+        "query": "(AND property (JOIN property.material (JOIN (R characterization_method.material) m.22961)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 50,
+        "question": "how many descriptors have property free energy diagram and have characterization method sem surface?",
+        "entities": [
+            "m.8657",
+            "m.14727"
+        ],
+        "query": "(COUNT (AND descriptor (AND (JOIN (R property.descriptor) m.8657) (JOIN (R characterization_method.descriptor) m.14727))))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 51,
+        "question": "give me the properties of the descriptors that are associated with sandwich",
+        "entities": [
+            "m.4439"
+        ],
+        "query": "(AND property (JOIN (R descriptor.property) (JOIN descriptor.descriptor m.4439)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 52,
+        "question": "what are the characterization methods with the descriptor interphase and synthesis method hp?",
+        "entities": [
+            "m.8810",
+            "m.24247"
+        ],
+        "query": "(AND characterization_method (AND (JOIN (R descriptor.characterization_method) m.8810) (JOIN characterization_method.synthesis_method m.24247)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 53,
+        "question": "what are the applications of the materials associated with sige",
+        "entities": [
+            "m.9453"
+        ],
+        "query": "(AND application (JOIN (R material.application) (JOIN material.material m.9453)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 54,
+        "question": "what is the characterization method for sulfur cathode",
+        "entities": [
+            "m.11041"
+        ],
+        "query": "(COUNT (AND characterization_method (JOIN characterization_method.application m.11041)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 55,
+        "question": "give me names of the materials that have the same characterization method as 25mpa",
+        "entities": [
+            "m.7978"
+        ],
+        "query": "(AND material (JOIN (R characterization_method.material) (JOIN (R material.characterization_method) m.7978)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 56,
+        "question": "provide all properties of the descriptor of the application immunoassays",
+        "entities": [
+            "m.10694"
+        ],
+        "query": "(AND property (JOIN property.descriptor (JOIN (R application.descriptor) m.10694)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 57,
+        "question": "the characterization method of basalts has what all applications?",
+        "entities": [
+            "m.11714"
+        ],
+        "query": "(AND application (JOIN (R characterization_method.application) (JOIN (R property.characterization_method) m.11714)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 58,
+        "question": "how many characterization methods have properties that are associated with the property unit cell parameter and have the synthesis method cdi?",
+        "entities": [
+            "m.3425",
+            "m.39892"
+        ],
+        "query": "(COUNT (AND characterization_method (JOIN characterization_method.property (AND (JOIN (R property.property) m.3425) (JOIN (R synthesis_method.property) m.39892)))))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 59,
+        "question": "which materials have descriptor pore walls and synthesis method uf?",
+        "entities": [
+            "m.45591",
+            "m.15236"
+        ],
+        "query": "(AND material (AND (JOIN material.descriptor m.45591) (JOIN material.synthesis_method m.15236)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 60,
+        "question": "what's the synthesis method for the application with characterization method gd-oes",
+        "entities": [
+            "m.13441"
+        ],
+        "query": "(AND synthesis_method (JOIN (R application.synthesis_method) (JOIN (R characterization_method.application) m.13441)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 61,
+        "question": "give me the count of all descriptors for anatomy",
+        "entities": [
+            "m.29936"
+        ],
+        "query": "(COUNT (AND descriptor (JOIN (R property.descriptor) m.29936)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 62,
+        "question": "what are the symmetry phase of descriptors that are associated with the descriptor impregnated and have the property melting behavior?",
+        "entities": [
+            "m.20173",
+            "m.24488"
+        ],
+        "query": "(AND symmetry_phase (JOIN symmetry_phase.descriptor (AND (JOIN descriptor.descriptor m.20173) (JOIN descriptor.property m.24488))))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 63,
+        "question": "what are the applications of the properties associated with myogenic",
+        "entities": [
+            "m.49359"
+        ],
+        "query": "(AND application (JOIN (R property.application) (JOIN (R property.property) m.49359)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 64,
+        "question": "how many materials are synthesized via anaerobically digested and have a symmetry_phase of 100?",
+        "entities": [
+            "m.29080",
+            "m.1818"
+        ],
+        "query": "(COUNT (AND material (AND (JOIN (R synthesis_method.material) m.29080) (JOIN (R symmetry_phase.material) m.1818))))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 65,
+        "question": "give me the descriptor of synthesis method optical that is also the descriptor of symmetry phase l2",
+        "entities": [
+            "m.63038",
+            "m.53094"
+        ],
+        "query": "(AND descriptor (AND (JOIN (R synthesis_method.descriptor) m.63038) (JOIN descriptor.symmetry_phase m.53094)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 66,
+        "question": "list the properties of all the characterization methods associated with solvothermal synthesis",
+        "entities": [
+            "m.9489"
+        ],
+        "query": "(AND property (JOIN (R characterization_method.property) (JOIN characterization_method.synthesis_method m.9489)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 67,
+        "question": "what are the synthesis methods that have descriptors which are associated with the descriptor nanofibrous?",
+        "entities": [
+            "m.10842"
+        ],
+        "query": "(AND synthesis_method (JOIN synthesis_method.descriptor (JOIN (R descriptor.descriptor) m.10842)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 68,
+        "question": "how many descriptors have property that have descriptors which have characterization_method irmpd?",
+        "entities": [
+            "m.28466"
+        ],
+        "query": "(COUNT (AND descriptor (JOIN descriptor.property (JOIN property.descriptor (JOIN descriptor.characterization_method m.28466)))))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 69,
+        "question": "what is the symmetry phase of polyethylene",
+        "entities": [
+            "m.1569"
+        ],
+        "query": "(AND symmetry_phase (JOIN symmetry_phase.material m.1569))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 70,
+        "question": "the characterization method for back reflectors has how many descriptors?",
+        "entities": [
+            "m.17065"
+        ],
+        "query": "(COUNT (AND descriptor (JOIN (R characterization_method.descriptor) (JOIN characterization_method.application m.17065))))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 71,
+        "question": "name other symmetry phases that are associated with the symmetry phase of hot casting",
+        "entities": [
+            "m.62864"
+        ],
+        "query": "(AND symmetry_phase (JOIN symmetry_phase.symmetry_phase (JOIN symmetry_phase.synthesis_method m.62864)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 72,
+        "question": "what are the materials that are associated with matterials that are synthesized by methods that have symmetry phase brownmillerite?",
+        "entities": [
+            "m.34703"
+        ],
+        "query": "(AND material (JOIN (R material.material) (JOIN material.synthesis_method (JOIN synthesis_method.symmetry_phase m.34703))))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 73,
+        "question": "what is the descriptor of material nonylphenol",
+        "entities": [
+            "m.26173"
+        ],
+        "query": "(AND descriptor (JOIN descriptor.material m.26173))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 74,
+        "question": "give me all the properties of the descriptors used for the two fluid model",
+        "entities": [
+            "m.40044"
+        ],
+        "query": "(AND property (JOIN (R descriptor.property) (JOIN descriptor.characterization_method m.40044)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 75,
+        "question": "what other applications are associated with the characterization method and with advanced oxidation process",
+        "entities": [
+            "m.15967"
+        ],
+        "query": "(AND application (AND (JOIN (R characterization_method.application) characterization_method) (JOIN application.application m.15967)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 76,
+        "question": "name the characterization method common to the descriptors monocrystal and dc",
+        "entities": [
+            "m.30458",
+            "m.48740"
+        ],
+        "query": "(AND characterization_method (AND (JOIN (R descriptor.characterization_method) m.30458) (JOIN characterization_method.descriptor m.48740)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 77,
+        "question": "what is the application of the characterization method that is also the application of kinase activity",
+        "entities": [
+            "m.16479"
+        ],
+        "query": "(AND application (AND (JOIN application.characterization_method characterization_method) (JOIN application.property m.16479)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 78,
+        "question": "provide all the descriptors of light source that are also used as descriptors for the synthesis method of isothermal heating",
+        "entities": [
+            "m.38242",
+            "m.19461"
+        ],
+        "query": "(AND descriptor (AND (JOIN (R application.descriptor) m.38242) (JOIN (R synthesis_method.descriptor) m.19461)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 79,
+        "question": "name all materials that have the characterization method of solid state route",
+        "entities": [
+            "m.49999"
+        ],
+        "query": "(AND material (JOIN (R characterization_method.material) (JOIN (R synthesis_method.characterization_method) m.49999)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 80,
+        "question": "give me the list of properties shared by rhombic dodecahedron and circuit diagram",
+        "entities": [
+            "m.22687",
+            "m.12824"
+        ],
+        "query": "(AND property (AND (JOIN (R symmetry_phase.property) m.22687) (JOIN (R characterization_method.property) m.12824)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 81,
+        "question": "other descriptors that are associated with the descriptor of chip",
+        "entities": [
+            "m.26523"
+        ],
+        "query": "(AND descriptor (JOIN (R descriptor.descriptor) (JOIN descriptor.property m.26523)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 82,
+        "question": "give me all materials that are associated with chalcogen and have characterization method of potentiodynamic",
+        "entities": [
+            "m.5028",
+            "m.27500"
+        ],
+        "query": "(AND material (AND (JOIN (R material.material) m.5028) (JOIN material.characterization_method m.27500)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 83,
+        "question": "the materials with characterization method of dose response curve have what properties?",
+        "entities": [
+            "m.5360"
+        ],
+        "query": "(AND property (JOIN (R material.property) (JOIN (R characterization_method.material) m.5360)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 84,
+        "question": "what are the synthesis methods for the properties with the descriptor nfs",
+        "entities": [
+            "m.4318"
+        ],
+        "query": "(AND synthesis_method (JOIN (R property.synthesis_method) (JOIN property.descriptor m.4318)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 85,
+        "question": "name the material with descriptor ultra-thin film and bjh desorption pore size distribution as its characterization method.",
+        "entities": [
+            "m.9691",
+            "m.34378"
+        ],
+        "query": "(AND material (AND (JOIN (R descriptor.material) m.9691) (JOIN (R characterization_method.material) m.34378)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 86,
+        "question": "what is the application associated with pump that also uses zirconium oxide",
+        "entities": [
+            "m.16566",
+            "m.20753"
+        ],
+        "query": "(AND application (AND (JOIN application.application m.16566) (JOIN application.material m.20753)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 87,
+        "question": "give me all characterization methods associated with the characterization method of the application optoelectronics",
+        "entities": [
+            "m.24814",
+            "m.4344"
+        ],
+        "query": "(AND characterization_method (AND (JOIN (R characterization_method.characterization_method) m.24814) (JOIN characterization_method.application m.4344)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 88,
+        "question": "what are the descriptors of mesenchymal stem",
+        "entities": [
+            "m.49329"
+        ],
+        "query": "(AND descriptor (JOIN descriptor.symmetry_phase m.49329))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 89,
+        "question": "cover glass and h2 generation have how many characterization methods in common?",
+        "entities": [
+            "m.20095",
+            "m.12912"
+        ],
+        "query": "(COUNT (AND characterization_method (AND (JOIN characterization_method.application m.20095) (JOIN (R descriptor.characterization_method) m.12912))))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 90,
+        "question": "count the number of materials with synthesis method supersonic expansion",
+        "entities": [
+            "m.32202"
+        ],
+        "query": "(COUNT (AND material (JOIN (R synthesis_method.material) m.32202)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 91,
+        "question": "how many symmetry phrases do the materials with characterization method reflection spectra have?",
+        "entities": [
+            "m.4418"
+        ],
+        "query": "(COUNT (AND symmetry_phase (JOIN symmetry_phase.material (JOIN material.characterization_method m.4418))))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 92,
+        "question": "what is the method to synthesize the applications associated with catalytic process?",
+        "entities": [
+            "m.19861"
+        ],
+        "query": "(AND synthesis_method (JOIN (R application.synthesis_method) (JOIN application.application m.19861)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 93,
+        "question": "count the number of characterization methods that are common between bone and ageing",
+        "entities": [
+            "m.8201",
+            "m.4714"
+        ],
+        "query": "(COUNT (AND characterization_method (AND (JOIN characterization_method.application m.8201) (JOIN characterization_method.synthesis_method m.4714))))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 94,
+        "question": "which property of fast cooling that is also a property of symmetry phase r-3m?",
+        "entities": [
+            "m.24103",
+            "m.48442"
+        ],
+        "query": "(AND property (AND (JOIN (R synthesis_method.property) m.24103) (JOIN (R symmetry_phase.property) m.48442)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 95,
+        "question": "give me the descriptors of the applications that are associated with the application aerospace",
+        "entities": [
+            "m.10377"
+        ],
+        "query": "(AND descriptor (JOIN (R application.descriptor) (JOIN (R application.application) m.10377)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 96,
+        "question": "what is the descriptor of the material with characterization method of upconversion fluorescence",
+        "entities": [
+            "m.58883"
+        ],
+        "query": "(AND descriptor (JOIN (R material.descriptor) (JOIN (R characterization_method.material) m.58883)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 97,
+        "question": "provide the phase of symmetry for materials associated with aluminum oxide",
+        "entities": [
+            "m.23627"
+        ],
+        "query": "(AND symmetry_phase (JOIN symmetry_phase.material (JOIN material.material m.23627)))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 98,
+        "question": "what are the descriptors of characterization methods that have symmetry phases that are associated with the symmetry phase ovarian carcinoma?",
+        "entities": [
+            "m.74717"
+        ],
+        "query": "(AND descriptor (JOIN descriptor.characterization_method (JOIN (R symmetry_phase.characterization_method) (JOIN (R symmetry_phase.symmetry_phase) m.74717))))"
+    },
+    {
+        "kb": "matkg",
+        "idx": 99,
+        "question": "give me the characterization method of the descriptors associated with oyster",
+        "entities": [
+            "m.75004"
+        ],
+        "query": "(AND characterization_method (JOIN (R descriptor.characterization_method) (JOIN descriptor.descriptor m.75004)))"
+    }
+]
