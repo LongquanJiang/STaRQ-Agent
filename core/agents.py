@@ -19,7 +19,7 @@ except:
     LLM_API_FUC = llm.safe_call_llm
     print(f"Use func from core.llm in agents.py")
 
-from core.const import *
+from core.prompts import *
 from typing import List
 from copy import deepcopy
 
